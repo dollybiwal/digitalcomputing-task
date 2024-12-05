@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="calcu.js"></script>
+</head>
+<body class="bg-gray-900 flex justify-center items-center h-screen">
+  <div class="bg-black text-white p-8 rounded-lg shadow-lg w-80">
+    <div class="flex justify-end bg-grey-800 text-3xl p-4 rounded-lg mb-6">
+      <input type=" text" id="display" class="bg-transparent text-right border-none w-full text-white focus:outline-none" disable/>
+    </div>
+  
+  <div class="grid grid-cols-4 gap-4">
+    <button onclick="appendtodisplay('7') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">7</button>
+    <button onclick="appendtodisplay('8') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">8</button>
+    <button onclick="appendtodisplay('9') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">9</button>
+    <button onclick="appendtodisplay('/') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">/</button>
+
+    <button onclick="appendtodisplay('4') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">4</button>
+    <button onclick="appendtodisplay('5') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">5</button>
+    <button onclick="appendtodisplay('6') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">6</button>
+    <button onclick="appendtodisplay('*') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">*</button>
+
+    <button onclick="appendtodisplay('1') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">1</button>
+    <button onclick="appendtodisplay('2') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">2</button>
+    <button onclick="appendtodisplay('3') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">3</button>
+    <button onclick="appendtodisplay('-') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">-</button>
+
+    <button onclick="appendtodisplay('0') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">0</button>
+    <button onclick="appendtodisplay('.') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">.</button>
+    <button onclick="appendtodisplay('+') " class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700">+</button>
+
+    <button onclick="cleardisplay() " class="bg-blue-800 p-4 rounded-lg hover:bg-red-500 col-span-2">ac</button>
+    <button onclick="calculate() " class="bg-blue-800 p-4 rounded-lg hover:bg-red-500 col-span-2">=</button>
+    
+  </div>
+</div>
+</body>
+</html>
