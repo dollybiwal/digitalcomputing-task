@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dolly's Creative Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Quicksand:wght@300;400&display=swap"
+        rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        header {
+            background: #4c6ef5;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+    
+        .about-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .about-section img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section div {
+            width: 65%;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .about-section p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        
+        .skills-section {
+            background-color: #f1f1f1;
+            padding: 50px 0;
+        }
+
+        .skills-section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill-card {
+            width: 30%;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .skill-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        
+        .projects-section {
+            margin-top: 50px;
+        }
+
+        .projects-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-family: 'Quicksand', sans-serif;
+            margin-bottom: 40px;
+        }
+
+        .project-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            width: 30%;
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            margin-top: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .project-card p {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #4c6ef5;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <h1>Dolly biwal</h1>
+        <p> i'm a Web Developer</p>
+    </header>
+
+    
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <section id="about" class="about-section">
+        <img src="psd-beautiful-anime-girl-with-purple-hair-glasses-sticker-with-white-border_831490-2021.avif" alt="Dolly's Photo"> <!-- Add your profile picture -->
+        <div>
+            <h2>Hello, I'm Dolly!</h2>
+           <h3>iam frontend Developer</h3>
+    </section>
+
+    
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <div class="skill-card">
+                <h3>html 80%</h3>
+                
+            </div>
+            <div class="skill-card">
+                <h3>css 50%</h3>
+               
+            </div>
+            <div class="skill-card">
+                <h3>js 30%</h3>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+               
+                <a href=>calculator</a>
+                
+                <a href="calc.html">View Project</a>
+            </div>
+            <div class="project-card">
+               
+                <a href="">facebook page</a>
+                
+                <a href="fb pg.html">View Project</a>
+            </div>
+            <div class="project-card">
+              
+               
+                <a href="">sdits header</a>
+                
+                <a href="enternal.html">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+
+</html>
