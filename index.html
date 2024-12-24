@@ -1,21 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task dolly</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dolly's Creative Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Quicksand:wght@300;400&display=swap"
+        rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
 </head>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        header {
+            background: #4c6ef5;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.2rem;
+            margin: 0 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+    
+        .about-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .about-section img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section div {
+            width: 65%;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .about-section p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        
+        .skills-section {
+            background-color: #f1f1f1;
+            
+        }
+
+        .skills-section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .skills-list {
+            /* display: flex; */
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill-card {
+            /* width: 30%; */
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .skill-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        
+        .projects-section {
+            margin-top: 50px;
+        }
+
+        .projects-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-family: 'Quicksand', sans-serif;
+            margin-bottom: 40px;
+        }
+
+        .project-cards {
+            
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            width: 30%;
+            margin-bottom: 30px;
+            background-color: white;
+            
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            margin-top: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .project-card p {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #4c6ef5;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+        label {
+                font-size: 1.1em;
+                margin: 10px 0;
+                display: block;
+            }
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 1em;
+            }
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.1em;
+                cursor: pointer;
+                width: 100%;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+            .footer {
+                text-align: center;
+                margin-top: 30px;
+                font-size: 0.9em;
+            }
+    </style>
+</head>
+
 <body>
-    <div class="bg-green-100 p-4 flex justify-between"><h1>dolly</h1>
-    <h2>digital computer® . SDITS</h2></div>
-    <div class="grid grid-cols-4 gap-4">
-        <div class="p-4 rounded-2xl shadow">
-            <a href="calc.html">calc</a></div>
-            <div class="p-4 rounded-2xl shadow"><a href="fb pg.html">fbpage</a></div>
-            <div class="p-4 rounded-2xl shadow"><a href="enternal.html">sdits.page</a></div>
-       
-    </div>
- 
+
+    
+    <header>
+        <h1>Dolly biwal</h1>
+        <p> i'm a Web Developer</p>
+    </header>
+
+    
+    <nav sm:flex>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <section id="about" class="about-section">
+        <img src="psd-beautiful-anime-girl-with-purple-hair-glasses-sticker-with-white-border_831490-2021.avif" alt="Dolly's Photo"> <!-- Add your profile picture -->
+        <div>
+            <h2>Hello, I'm Dolly!</h2>
+           <h3>iam frontend Developer</h3>
+    </section>
+
+    
+    <section id="skills" class="skills-section sm:flex">
+        <h2>My Skills</h2>
+        <div class="skills-list sm:flex pl-5">
+            <div class="skill-card">
+                <h3>html 80%</h3>
+                
+            </div>
+            <div class="skill-card sm:flex pl-5">
+                <h3>css 50%</h3>
+               
+            </div>
+            <div class="skill-card sm:flex pl-5">
+                <h3 >js 30%</h3>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card sm:flex pl-5">
+               
+                <a href=>calculator</a>
+                
+                <a href="calc.html">View Project</a>
+            </div>
+            <div class="project-card sm:flex pl-5">
+               
+                <a href="">facebook page</a>
+                
+                <a href="fb pg.html">View Project</a>
+            </div>
+            <div class="project-card sm:flex pl-5">
+              
+               
+                <a href="">sdits header</a>
+                
+                <a href="enternal.html">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p></p>
+    </footer>
+    
+    </head>
+    <body>
+    
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    
+        <div class="footer">
+            <p>created by dolly</p>
+        </div>
+    
+    </body>
+    </html>
+    
 </body>
+
 </html>
